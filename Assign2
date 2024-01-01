@@ -1,0 +1,338 @@
+hifi Ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls
+dj  Hello  revakar  rohan  ved	ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ sort ls
+sort: cannot read: ls: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls sort
+ls: cannot access 'sort': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls
+dj  Hello  revakar  rohan  ved	ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ sort 
+date
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ man ls
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls Date
+ls: cannot access 'Date': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ Date man ls
+Command 'Date' not found, did you mean:
+  command 'gate' from snap gate (9.3)
+  command 'kate' from snap kate (23.08.4)
+  command 'date' from deb coreutils (8.32-4.1ubuntu1)
+  command 'kate' from deb kate (4:21.12.3-0ubuntu1)
+  command 'late' from deb late (0.1.0-14)
+See 'snap info <snapname>' for additional versions.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ man ls
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -lt
+total 20
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 dj
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 rohan
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 Hello
+-rw-rw-r-- 1 vedant vedant   56 Dec 29 22:22 ved.txt
+-rw-rw-r-- 1 vedant vedant    0 Dec 28 17:17 revakar
+drwxrwxr-x 2 vedant vedant 4096 Dec 28 17:17 ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -t
+dj  rohan  Hello  ved.txt  revakar  ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -i
+2260568 dj  2260565 Hello  2260563 revakar  2260567 rohan  2260561 ved	2260548 ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -R
+.:
+dj  Hello  revakar  rohan  ved	ved.txt
+
+./dj:
+
+./Hello:
+
+./rohan:
+
+./ved:
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat mySelf.txt
+cat: mySelf.txt: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ touch myself.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat\>> myself.txt
+Command 'cat>' not found, did you mean:
+  command 'cat' from deb coreutils (8.32-4.1ubuntu1)
+  command 'catm' from deb mescc-tools (1.3-2)
+Try: sudo apt install <deb name>
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat>> myself.txt
+revadkar 
+ved^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat>> myself
+ved
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat>> myself.txt
+revadkar
+vedant
+ramakant
+:wq
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+revadkar
+vedant
+ramakant
+:wq
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ touch ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat>> ved.txt
+vidyanagar parli vaijnath
+
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+revadkar
+vedant
+ramakant
+:wq
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat mysel.txt
+cat: mysel.txt: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+revadkar
+vedant
+ramakant
+:wq
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat>> myself.txt
+vidyanagar parli vaijanth
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cat myself.txt
+revadkar 
+revadkar
+vedant
+ramakant
+:wq
+vidyanagar parli vaijanth
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ touch myself.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls 
+dj  Hello  myself  myself.txt  revakar	rohan  ved  ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -lt
+total 28
+-rw-rw-r-- 1 vedant vedant   65 Dec 29 22:48 myself.txt
+-rw-rw-r-- 1 vedant vedant   83 Dec 29 22:46 ved.txt
+-rw-rw-r-- 1 vedant vedant    4 Dec 29 22:45 myself
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 dj
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 rohan
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 Hello
+-rw-rw-r-- 1 vedant vedant    0 Dec 28 17:17 revakar
+drwxrwxr-x 2 vedant vedant 4096 Dec 28 17:17 ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ touch myself.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ ls -lt
+total 28
+-rw-rw-r-- 1 vedant vedant   65 Dec 29 22:49 myself.txt
+-rw-rw-r-- 1 vedant vedant   83 Dec 29 22:46 ved.txt
+-rw-rw-r-- 1 vedant vedant    4 Dec 29 22:45 myself
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 dj
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 rohan
+drwxrwxr-x 2 vedant vedant 4096 Dec 29 22:25 Hello
+-rw-rw-r-- 1 vedant vedant    0 Dec 28 17:17 revakar
+drwxrwxr-x 2 vedant vedant 4096 Dec 28 17:17 ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ mkdir one
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1$ cd one
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one$ touch 1.txt 11.txt 111.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one$ mkdir two
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one$ cd two
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two$ touch 2.txt 22.txt 222.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two$ mkdir three
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two$ cd three
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three$ tiuch 3.txt
+Command 'tiuch' not found, did you mean:
+  command 'touch' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three$ touch 3.txt 33.txt 333.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three$ mkdir four
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three$ cd four
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three/four$ touch 4.txt 44.txt 444.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three/four$ mkdir five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three/four$ cd five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc Practice/assign1/one/two/three/four/five$ cd ~
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls /home/
+vedant
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls
+80317.jpg  AndroidStudioProjects  Desktop    Downloads	Pictures  Public  SYSTUM     Videos
+Android    baslll_hist		  Documents  Music	pritam	  snap	  Templates
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cat SYSTUM/'osc practice'/assign1
+cat: 'SYSTUM/osc practice/assign1': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd /SYSTUM/Pg-Dmc/Osc Practice/assign1
+bash: cd: too many arguments
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd /SYSTUM/Pg-Dmc/Osc Practice/assign1/
+bash: cd: too many arguments
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd SYSTUM/Pg-Dmc/Osc Practice/assign1
+bash: cd: too many arguments
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls SYSTUM/pg-Dmc/Osc Practice/assign1/one/two/three/four/five
+ls: cannot access 'SYSTUM/pg-Dmc/Osc': No such file or directory
+ls: cannot access 'Practice/assign1/one/two/three/four/five': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls SYSTUM/pg-Dmc/Osc_Practice/assign1/one/two/three/four/five
+ls: cannot access 'SYSTUM/pg-Dmc/Osc_Practice/assign1/one/two/three/four/five': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls SYSTUM/pg-Dmc/Osc_Practice/assign1/one/two/three/four/five/
+ls: cannot access 'SYSTUM/pg-Dmc/Osc_Practice/assign1/one/two/three/four/five/': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four/five
+555.txt  55.txt  5.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four
+444.txt  44.txt  4.txt	five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four cat 44.txt
+ls: cannot access 'cat': No such file or directory
+ls: cannot access '44.txt': No such file or directory
+one/two/three/four:
+444.txt  44.txt  4.txt	five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four cat>> 44.txt
+ls: cannot access 'cat': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four 44.txt
+44.txt
+
+one/two/three/four:
+444.txt  44.txt  4.txt	five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four>> 44.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four 44.txt
+44.txt
+
+one/two/three/four:
+444.txt  44.txt  4.txt	five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four 44.txt hello
+ls: cannot access 'hello': No such file or directory
+44.txt
+
+one/two/three/four:
+444.txt  44.txt  4.txt	five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cat>>  one/two/three/four/44.txt  
+hello pathan 
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rmdir  one/two/three/four/five/555.txt  
+rmdir: failed to remove 'one/two/three/four/five/555.txt': Not a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rmdir one/two/three/four/five/555.txt  
+rmdir: failed to remove 'one/two/three/four/five/555.txt': Not a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four/five  
+555.txt  55.txt  5.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rmdir one/two/three/four/five 555.txt 
+rmdir: failed to remove 'one/two/three/four/five': Directory not empty
+rmdir: failed to remove '555.txt': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rmdir one/two/three/four/five/555.txt 
+rmdir: failed to remove 'one/two/three/four/five/555.txt': Not a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rmdir one/two/three/four/five
+rmdir: failed to remove 'one/two/three/four/five': Directory not empty
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ rm one/two/three/four/five/555.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three/four/five  
+55.txt	5.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd one/two/three/four/five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd--
+cd--: command not found
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd- three
+Command 'cd-' not found, did you mean:
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdo' from deb cdo (2.0.4-1)
+  command 'cdb' from deb tinycdb (0.78build3)
+  command 'cdi' from deb cdo (2.0.4-1)
+  command 'cdp' from deb irpas (0.10-9)
+  command 'cdw' from deb cdw (0.8.1-2)
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.2)
+Try: sudo apt install <deb name>
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd- 
+Command 'cd-' not found, did you mean:
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.2)
+  command 'cdi' from deb cdo (2.0.4-1)
+  command 'cdo' from deb cdo (2.0.4-1)
+  command 'cdp' from deb irpas (0.10-9)
+  command 'cdw' from deb cdw (0.8.1-2)
+  command 'cdb' from deb tinycdb (0.78build3)
+  command 'cd5' from deb cd5 (0.1-4)
+Try: sudo apt install <deb name>
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cat>> \four\three\3.txt
+hello
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ ls
+55.txt	5.txt  fourthree3.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cat fourthree3.txt
+hello
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ rm fourthree3.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ ls
+55.txt	5.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ pwd
+/home/vedant/one/two/three/four/five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd -
+/home/vedant
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ -pwd
+Command '-pwd' not found, did you mean:
+  command 'hpwd' from deb hfsutils (3.2.6-15build2)
+  command 'pwd' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd pwd
+bash: cd: pwd: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd -pwd
+bash: cd: -p: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ cd one/two/three/four/five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cat>> three/3.txt
+bash: three/3.txt: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cat > ../../3.txt
+
+DMC
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd ..
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four$ cd five
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ ls ../../../
+222.txt  22.txt  2.txt	three
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ ^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ ^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ 
+hifi Ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ rm ../../../222.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one/two/three/four/five$ cd ../../../../
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five
+rm: cannot remove 'two/three/four/five': Is a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five/
+rm: cannot remove 'two/three/four/five/': Is a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ ls two/three/four/five
+55.txt	5.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five
+rm: cannot remove 'two/three/four/five': Is a directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five/5.txt 55.txt
+rm: cannot remove '55.txt': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five/5.txt
+rm: cannot remove 'two/three/four/five/5.txt': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ ls two/three/four/five
+55.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm two/three/four/five/55.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir two/three
+rmdir: failed to remove 'two/three': Directory not empty
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir two/three/four
+rmdir: failed to remove 'two/three/four': Directory not empty
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir two/three/four -R
+rmdir: invalid option -- 'R'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ -R two/three/four
+-R: command not found
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir two/three/four
+rmdir: failed to remove 'two/three/four': Directory not empty
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir two/three/four -R
+rmdir: invalid option -- 'R'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ --help
+--help: command not found
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three/four
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ -r two/three/four
+-r: command not found
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three/four
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three/four/
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three/fou^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ ls two/three
+333.txt  33.txt  3.txt	four
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rmdir -r two/three
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ rm -r two/three
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ ls two/three
+ls: cannot access 'two/three': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/one$ cd ..
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ touch one/two/three 3.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three 3.txt
+3.txt  one/two/three
+vedant@vedant-HP-Laptop-15s-fr2xxx:~$ ls one/two/three
+one/two/three
+
