@@ -1,0 +1,95 @@
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+hifi Ved
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ touch data.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ cat>> data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ wc data.txt
+  6  25 145 data.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep files data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep -files data.txt
+grep: iles: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep -(files) data.txt
+bash: syntax error near unexpected token `('
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep -v files
+data.txt
+data.txt
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep -v files data.txt
+Linux is open source.
+In Linux everything is file
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep have data.txt
+files have permissions.
+files have inode no.
+files have size.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep ^f data.txt
+files have permissions.
+files have inode no.
+files have size.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep f^ data.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep f$ data.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ grep .$ data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head 2 data.txt
+head: cannot open '2' for reading: No such file or directory
+==> data.txt <==
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head -n 2 data.txt
+Linux is open source.
+In Linux everything is file
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ tail -n 3\ data.txt
+tail: invalid number of lines: ‘3 data.txt’
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ tail -n 3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head 3 4 5 data.txt
+head: cannot open '3' for reading: No such file or directory
+head: cannot open '4' for reading: No such file or directory
+head: cannot open '5' for reading: No such file or directory
+==> data.txt <==
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head -n 5 filename.txt | tail -n 3
+head: cannot open 'filename.txt' for reading: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ head -n 5 data.txt | tail -n 3
+files have permissions.
+files have inode no.
+files have size.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign4$ 
+
