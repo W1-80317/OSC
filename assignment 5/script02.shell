@@ -1,0 +1,24 @@
+echo "Enter Your Choice"
+read choice
+
+case $choice in 
+1)
+	date
+	;;
+2)
+	cal
+	;;
+3)
+	ls
+	;;
+4)
+	pwd
+	;;
+5)
+	exit
+	;;
+*)
+	echo "Invalid choice"
+	exit
+	;;
+esac
