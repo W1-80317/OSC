@@ -1,0 +1,169 @@
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ cat hello.txt
+cat: hello.txt: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ touch hello.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls
+hello.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html
+Command 'rename' not found, but can be installed with:
+sudo apt install rename
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ sudo apt install rename
+[sudo] password for vedant: 
+Sorry, try again.
+[sudo] password for vedant: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  rename
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 20.2 kB of archives.
+After this operation, 55.3 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu jammy/universe amd64 rename all 1.30-1 [20.2 kB]
+Fetched 20.2 kB in 3s (6,559 B/s) 
+Selecting previously unselected package rename.
+(Reading database ... 222951 files and directories currently installed.)
+Preparing to unpack .../archives/rename_1.30-1_all.deb ...
+Unpacking rename (1.30-1) ...
+Setting up rename (1.30-1) ...
+update-alternatives: using /usr/bin/file-rename to provide /usr/bin/rename (rename) in auto mode
+Processing triggers for man-db (2.10.2-1) ...
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html
+Bareword found where operator expected at (eval 25) line 2, near "*.html"
+	(Missing operator before html?)
+syntax error at line 2, near "*.html
+", in:
+*.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename ved.txt .html
+Bareword "ved" not allowed while "strict subs" in use at line 2, in:
+ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html
+Bareword found where operator expected at (eval 25) line 2, near "*.html"
+	(Missing operator before html?)
+syntax error at line 2, near "*.html
+", in:
+*.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/^/new_/' *.html
+Can't rename *.html new_*.html: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/^/ved.txt/' *.html
+Can't rename *.html ved.txt*.html: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/^/ved.txt/' .html
+Can't rename .html ved.txt.html: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/^/ved.txt/' 
+*.html
+Can't rename *.html ved.txt*.html: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html ved.txt
+Bareword found where operator expected at (eval 25) line 2, near "*.html"
+	(Missing operator before html?)
+syntax error at line 2, near "*.html
+", in:
+*.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename *.html ved.tx^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/\.txt$/.htm/' *.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/\.txt$/.htm/' *.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls
+hello.htm
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ln -s ved.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls
+hello.htm  ved.html
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ln ved.txt
+ln: failed to access 'ved.txt': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ln ved.html
+ln: failed to create hard link './ved.html': File exists
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ln ved.htm
+ln: failed to access 'ved.htm': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ln hello.html
+ln: failed to access 'hello.html': No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ stat ved.html
+  File: ved.html -> ved.html
+  Size: 8         	Blocks: 0          IO Block: 4096   symbolic link
+Device: 10308h/66312d	Inode: 2237055     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/  vedant)   Gid: ( 1000/  vedant)
+Access: 2023-12-30 00:11:35.669815936 +0530
+Modify: 2023-12-30 00:11:35.669815936 +0530
+Change: 2023-12-30 00:11:35.669815936 +0530
+ Birth: 2023-12-30 00:11:35.669815936 +0530
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ whoami
+vedant
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ tty
+/dev/pts/2
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ who am i
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ users
+vedant
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ who
+vedant   tty2         2023-12-29 22:04 (tty2)
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ grep
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ grep ved.html
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/\.txt$/.htm/' *.txt
+Can't rename *.txt *.htm: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ rename 's/\.html$/.htm/' *.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ cat>> ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ grep v
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ grep v*d
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ chmod ved.txt
+chmod: missing operand after ‘ved.txt’
+Try 'chmod --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ chmod ved.txt
+chmod: missing operand after ‘ved.txt’
+Try 'chmod --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ chmod 755 ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls ved.txt
+ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ cat ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ wc ved.txt
+ 2  2 15 ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ who | wc ved.txt
+ 2  2 15 ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ head ved.txy
+head: cannot open 'ved.txy' for reading: No such file or directory
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ head ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ tail ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ sprt ved.txt
+Command 'sprt' not found, did you mean:
+  command 'spot' from snap spot (0.4.0)
+  command 'sort' from deb coreutils (8.32-4.1ubuntu1)
+  command 'prt' from deb prt (0.22-1)
+  command 'srt' from deb python3-pysrt (1.0.1-2)
+See 'snap info <snapname>' for additional versions.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ sort ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ who ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ grep ved.txt
+^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls ved.txt
+ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls grep ved.txt
+ls: cannot access 'grep': No such file or directory
+ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ls grep ved.txt
+ls: cannot access 'grep': No such file or directory
+ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ tr ved.txt
+tr: missing operand after ‘ved.txt’
+Two strings must be given when translating.
+Try 'tr --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ tr -s ved.txt
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ cat ved.txt
+hello
+revadkar
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ cut ved.txt ved
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ ^C
+vedant@vedant-HP-Laptop-15s-fr2xxx:~/SYSTUM/Pg-Dmc/Osc_Practice/assign3$ 
+
+
